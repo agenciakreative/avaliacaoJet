@@ -15,9 +15,17 @@
 }
 
 <div class="ui grid">
-    <div class="row">
+    <div class="imagensGaleria">
+    <div class="row one column ">
+        <div class="column">
+            @Html.Partial("~/Views/Product/Details/_Gallery.cshtml", Model)
+        </div>
+    </div>
+ </div>
+    <div class="imagemPrincipal">
+    <div class="row" >
         <div class="column center aligned">
-            <div class="ui image">
+            <div class="ui image ">
                 @if (!string.IsNullOrEmpty(tag.Name))
                 {
                     <div class="ui top right attached label massive imagetag">
@@ -37,11 +45,6 @@
             </div>
         </div>
     </div>
+</div>
 
-
-    <div class="row one column">
-        <div class="column">
-            @Html.Partial("~/Views/Product/Details/_Gallery.cshtml", Model)
-        </div>
-    </div>
 </div>

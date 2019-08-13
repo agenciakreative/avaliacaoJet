@@ -46,6 +46,11 @@ headlogo {
     }
   }
 
+  ._new {
+      height: 100px;
+      font-size: 20px;
+      border-radius: 5px;
+  }
   .searchMobile {
     display: inline-block;
 
@@ -65,8 +70,8 @@ headlogo {
     .blocoBusca {
       display: none;
       background: #fff;
-      border-radius: .5em;
-      border: 1px solid #DDD;
+      border-radius: .0;
+      border: 1px solid rgb(112, 5, 5);
 
       &.active {
         display: block !important;
@@ -83,9 +88,9 @@ headlogo {
         align-items: center;
 
         .prompt {
-          border: 0px !important;
+          border: 4px !important;
           max-width: calc(100% - 80px);
-        }
+          }
 
         .icon {
           display: table;
@@ -112,6 +117,7 @@ headlogo {
     cursor: pointer;
     float: right;
     line-height: 36px;
+ 
 
     .ui.basic.button {
       > span {
@@ -121,7 +127,22 @@ headlogo {
       }
     }
   }
+
+
+
 }
+.cartbutton_new {
+
+  border: 1px solid #7AA334;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+    height: 100px;
+    text-align: center;
+    padding-top: 29px;
+  
+
+}
+
 
 .wishlist {
   text-align: right !important;
